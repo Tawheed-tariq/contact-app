@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.hideScrollbar::-webkit-scrollbar{
+    display: none;
+}
+ .hideScrollbar{
+    -ms-overflow-style: none; /*Supports in IE and Edge*/
+    scrollbar-width: none; /* Supports in firefox */ 
+}

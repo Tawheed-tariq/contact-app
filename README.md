@@ -38,7 +38,28 @@ This template provides a minimal setup to get React working in Vite with HMR and
     npm run dev
 ```
 
-Currently, two official plugins are available:
+# Used Formik to create forms
+```
+npm i formik
+```
+## example
+```
+    import {Form, Formik, Field} from 'formik'
+    <Formik>
+        <Form>
+            <label htmlFor="name">Name</label>
+            <Field name='name' type="text" id="name" />
+        </Form>
+    </Formik>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
+
+# Used react-toastify to create add, delete, update toasts
+```
+    npm i react-toastify
+```
+
+# Used yup for schema validation
+```
+    npm i yup
+```

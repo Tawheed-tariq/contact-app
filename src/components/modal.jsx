@@ -55,15 +55,16 @@ export default function Modal({isOpen, onClose , isUpdate, contact}){
                 }}
                 
             >
-                <Form className="bg-white flex flex-col gap-2 w-11/12 max-w-xl rounded-xl py-5 px-5 absolute top-32 z-40 ">
+                <Form className="bg-primary flex flex-col gap-2 w-11/12 max-w-xl rounded-xl py-5 px-5 absolute top-32 z-40 ">
                     <AiOutlineClose onClick={onClose} className='self-end cursor-pointer'/>
                     <label className="font-medium text-lg" htmlFor="name">Name</label>
-                    <Field  name='name' className="border-2 h-8 rounded-full border-gray px-4" type="text" id="name" />
-                    <ErrorMessage name='name'/>
+                    <Field  name='name' className=" h-8 rounded-full border-black px-4" type="text" id="name" />
+                    <div className='text-red-600 text-xl'><ErrorMessage name='name'/></div>
+                    
                     <label className="font-medium text-lg" htmlFor="email">Email</label>
-                    <Field  name='email' className="border-2  h-8 rounded-full border-gray px-4" type="text" id="email" />
-                    <ErrorMessage name='email'/>
-                    <button type='submit' className="self-end p-3 px-4 bg-orange rounded-full cursor-pointer text-lg">{isUpdate? "Update" : "Add"} Contact</button>
+                    <Field  name='email' className="  h-8 rounded-full border-black px-4" type="text" id="email" />
+                    <div className='text-red-600 text-xl'><ErrorMessage name='email'/></div>
+                    <button type='submit' className="self-end p-3 px-4 bg-accent font-medium rounded-full cursor-pointer text-lg">{isUpdate? "Update" : "Add"} Contact</button>
                 </Form>
             </Formik>}
         </>

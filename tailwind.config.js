@@ -7,12 +7,17 @@ export default {
   theme: {
     extend: {
       colors:{
+        bgclr:"#fbfcf7",
         gray:"#5A5959",
         orange: "#F6820C",
         yellow:"#FFEAAE",
         "dark-yellow":"#FCCA3F",
         "dark-gray":"#323334",
-        purple:"#5F00D9"
+        purple:"#5F00D9",
+        txtclr: "#080803",
+        primary: "#71c675",
+        secondary: "#b3ba54",
+        accent: "#ebefdd"
       }
     },
     screens: {

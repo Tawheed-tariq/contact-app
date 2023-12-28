@@ -58,7 +58,7 @@ function App() {
 
   return (
     <>
-      <div className='w-full bg-dark-gray h-screen flex flex-col items-center'>
+      <div className='w-full bg-bgclr h-screen flex flex-col items-center'>
         <Header filterContacts={filterContacts} isOpen={isOpen} onOpen={onOpen} onClose={onClose}/>
         <div className={`sm:w-4/5 w-11/12 sm:max-w-2xl mt-2`}>
           {
